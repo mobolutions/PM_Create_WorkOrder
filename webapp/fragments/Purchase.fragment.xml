@@ -1,0 +1,295 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.sap.build.ba293bd41-us_1.createWoV2.controller.Purchase" 
+xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+  
+    <Dialog contentHeight="70%" contentWidth="90%" horizontalScrolling="false" showHeader="true" state="None" stretch="false" title="Purchase data" type="Standard" verticalScrolling="true">
+       
+       <content>
+        	
+ <!--       	<VBox class="sapUiSmallMargin">-->
+	<!--	<f:Form id="FormChange480_Trial"-->
+	<!--		editable="true">-->
+		
+	<!--		<f:layout>-->
+	<!--			<f:ResponsiveGridLayout-->
+	<!--				labelSpanXL="4"-->
+	<!--				labelSpanL="4"-->
+	<!--				labelSpanM="4"-->
+	<!--				labelSpanS="12"-->
+	<!--				adjustLabelSpan="false"-->
+	<!--				emptySpanXL="0"-->
+	<!--				emptySpanL="0"-->
+	<!--				emptySpanM="0"-->
+	<!--				emptySpanS="0"-->
+	<!--				columnsXL="3"-->
+	<!--				columnsL="2"-->
+	<!--				columnsM="2"-->
+	<!--				singleContainerFullSize="false" />-->
+	<!--		</f:layout>-->
+	<!--		<f:formContainers>-->
+	<!--			<f:FormContainer title="">-->
+	<!--				<f:formElements>-->
+	<!--					<f:FormElement label="">-->
+							
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Requirement Qty">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="Price">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+							
+								
+	<!--							<ComboBox id="combo15" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+								
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+								
+								
+								
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+						
+						
+	<!--					<f:FormElement label="Material Group">-->
+	<!--						<f:fields>-->
+								
+	<!--							<ComboBox id="combo8" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+									
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+								
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+								
+								
+								
+								
+								
+								
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--						<f:FormElement label="Purchase Group">-->
+	<!--						<f:fields>-->
+								
+								
+	<!--							<ComboBox id="combo9" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+									
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+							
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--						<f:FormElement label="Agreement">-->
+	<!--						<f:fields>-->
+								
+							
+	<!--							<ComboBox id="combo12" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+									
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+								
+							
+								
+								
+								
+	<!--								<ComboBox id="combo13" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+								
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+								
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--						<f:FormElement label= "Goods Recipient">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--						<f:FormElement label= "Requisitioner">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="Pl.Deliv.Time">-->
+	<!--						<f:fields>-->
+								
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+								
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label= "Vend.Mat.No">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="Purchase Req.">-->
+	<!--						<f:fields>-->
+								
+	<!--							<Input value="" />-->
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+
+						
+						
+	<!--				</f:formElements>-->
+	<!--			</f:FormContainer>-->
+	<!--			<f:FormContainer title="">-->
+	<!--				<f:formElements>-->
+	<!--					<f:FormElement label="Sort String">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="per">-->
+						
+	<!--						<Input value="" />-->
+	<!--						<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="G/L Account">-->
+	<!--						<f:fields>-->
+							
+	<!--							<ComboBox id="combo16" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+								
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+							
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Vendor">-->
+	<!--						<f:fields>-->
+								
+								
+	<!--							<ComboBox id="combo10" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+								
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+	<!--							</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Info Record">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="27"/>-->
+	<!--							<ComboBox id="combo14" editable="true" enabled="true" visible="true" width="auto"-->
+	<!--								valueState="None" maxWidth="100%">-->
+	<!--								<items>-->
+								
+	<!--								</items>-->
+	<!--								</ComboBox>-->
+								
+								
+								
+								
+								
+								
+								
+								
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="Unloading Point">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="Tracking Number">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--					<f:FormElement label="GR Proc.Time">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+						
+	<!--						<f:FormElement label="Received">-->
+	<!--						<f:fields>-->
+								
+	<!--							<Input value="" />-->
+	<!--							<Input value="">-->
+	<!--								<layoutData>-->
+	<!--									<l:GridData span="XL2 L2 M2 S4" />-->
+	<!--								</layoutData>-->
+	<!--							</Input>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+
+	<!--				</f:formElements>-->
+	<!--			</f:FormContainer>-->
+				
+	<!--		</f:formContainers>-->
+	<!--	</f:Form>-->
+	<!--</VBox>-->
+        
+ 
+           
+        </content>
+        <beginButton/>
+        <buttons>
+        	
+            <Button text="OK" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="okpress"/>
+            <Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="cancelpress"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

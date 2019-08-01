@@ -1,0 +1,122 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <!--<P13nDialog title="Equipment" showReset="false" showResetEnabled="{path: '/ShowResetEnabled'}" ok="onOK1" cancel="onCancel1"-->
+    <!--            reset="onReset" class="sapUiSizeCompact" contentWidth="50%" >-->
+    <!--    <Label text="Equipment" design="Bold"/>-->
+    <!--    <ComboBox id="combo2" placeholder="Select Equipment" width="auto" selectionChange="c1" items="">-->
+    <!--    	<core:Item	key="" text=""/>-->
+    <!--    </ComboBox> -->
+    <!--</P13nDialog>-->
+    
+    <Dialog horizontalScrolling="true" icon="sap-icon://functional-location" showHeader="true" state="None" stretch="false"
+		title="Equipment" type="Standard" verticalScrolling="true" contentHeight="" contentWidth="42%">
+		<content>
+			<IconTabBar expandable="true" expanded="true" applyContentPadding="true" backgroundDesign="Translucent" upperCase="false" visible="true"
+				selectedKey="Ok">
+				<items>
+					<IconTabFilter iconColor="Default" text="By Plant" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true"
+						visible="true" iconDensityAware="false">
+						<content>
+							<HBox>
+								<Text text="Plant" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"
+									class="sapUiTinyMargin"/>
+								<ComboBox id="main1" placeholder="" editable="true" items="{/PlantF4Set}" selectionChange="plant1" enabled="true" visible="true" width="100%"
+									valueState="None" maxWidth="100%">
+									<core:Item text="{ImPlant} {Descriptions}" enabled="true" key="{ImPlant}"/>
+								</ComboBox>
+							</HBox>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter iconColor="Default" text="By Cost center" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true"
+						visible="true" iconDensityAware="false">
+						<content>
+							<HBox>
+								<Text text="Cost Center" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"
+									class="sapUiTinyMargin"/>
+								<ComboBox id="cost1" placeholder="" change="objcode" width="15em" editable="true"></ComboBox>
+							</HBox>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter iconColor="Default" text="By Equipment" count="" design="Vertical" showAll="false" textDirection="Inherit"
+						enabled="true" visible="true" iconDensityAware="false">
+						<content>
+							<HBox>
+								<Text text="Equipment" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"
+									class="sapUiTinyMargin"/>
+								<ComboBox id="equip" placeholder="" editable="true" change="tech_change1" enabled="true" visible="true" width="100%" valueState="None"
+									maxWidth="100%"></ComboBox>
+							</HBox>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					
+					<!--<IconTabFilter iconColor="Default" text="By Equipment" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true"-->
+					<!--	visible="true" iconDensityAware="false">-->
+					<!--	<content>-->
+					<!--		<HBox>-->
+					<!--			<Text text="Equipment" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"-->
+					<!--				class="sapUiTinyMargin"/>-->
+					<!--			<ComboBox id="equip" placeholder="" editable="true" change="equichange" enabled="true" visible="true" width="100%" valueState="None"-->
+					<!--				maxWidth="100%"></ComboBox>-->
+					<!--		</HBox>-->
+					<!--	</content>-->
+					<!--</IconTabFilter>-->
+				</items>
+				<content>
+					<Text text="Tab Bar Content goes here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+						visible="true"/>
+				</content>
+			</IconTabBar>
+			<Table id="technical_detail1" width="auto" noDataText="Select Details" mode="SingleSelect" showSeparators="All" growing="true"
+				growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+				<infoToolbar>
+					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+						<content>
+							<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+				<headerToolbar>
+					<OverflowToolbar width="auto" height="auto" design="Solid" visible="true" enabled="true">
+						<content>
+							<Title text="" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+							<ToolbarSpacer width=""/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Equipment" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Description" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<Text id="p3" text=""/>
+						<Text id="p4" text=""/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="Clear Filter" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="clearfilter1"/>
+			<Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="techok1"/>
+			<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="canceltecch1"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+  </core:FragmentDefinition>

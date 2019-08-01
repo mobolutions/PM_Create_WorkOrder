@@ -1,0 +1,190 @@
+<core:FragmentDefinition controllerName="com.sap.build.ba293bd41-us_1.createWoV2.controller.Dialog3" xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:semantic="sap.f.semantic" xmlns:footerbar="sap.ushell.ui.footerbar"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:ui="sap.ui.table" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" xmlns:uxap="sap.uxap" xmlns:tnt="sap.tnt"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:ch="sap.suite.ui.microchart" xmlns:rules="sap.rules.ui" xmlns:f="sap.ui.layout.form" xmlns:vm="sap.ui.comp.variants" xmlns:m="sap.m">
+	<Dialog horizontalScrolling="false" showHeader="false" state="None" stretch="false" title="Title" type="Standard" verticalScrolling="true">
+		<content>
+			<!--<l:ResponsiveSplitter defaultPane="default">-->
+			<!--	<l:PaneContainer>-->
+			<!--		<l:SplitPane requiredParentWidth="400" id="default">-->
+			<!--			<m:Panel headerText="Minimum parent width 400" height="100%">-->
+			<!--				<m:List headerText="Products" items="{ path: '/ProductCollection' }">-->
+			<!--					<m:StandardListItem title="{Name}" counter="{Quantity}"/>-->
+			<!--				</m:List>-->
+			<!--			</m:Panel>-->
+			<!--		</l:SplitPane>-->
+			<!--		<l:PaneContainer orientation="Vertical">-->
+			<!--			<l:SplitPane requiredParentWidth="600">-->
+			<!--				<m:Panel headerText="Minimum parent width 600">-->
+			<!--					<m:Select forceSelection="false" selectedKey="1239102" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">-->
+			<!--						<core:Item key="{ProductId}" text="{Name}"/>-->
+			<!--					</m:Select>-->
+			<!--				</m:Panel>-->
+			<!--			</l:SplitPane>-->
+			<!--			<l:SplitPane requiredParentWidth="800">-->
+			<!--				<m:Page title="Minimum parent width 800">-->
+			<!--					<m:footer>-->
+			<!--						<m:OverflowToolbar id="otb3">-->
+			<!--							<m:Label text="Buttons:"/>-->
+			<!--							<m:ToolbarSpacer/>-->
+			<!--							<m:Button text="New" type="Transparent"/>-->
+			<!--							<m:Button text="Open" type="Transparent"/>-->
+			<!--							<m:Button text="Save" type="Transparent"/>-->
+			<!--							<m:Button text="Save as" type="Transparent"/>-->
+			<!--							<m:Button text="Cut" type="Transparent"/>-->
+			<!--							<m:Button text="Copy" type="Transparent"/>-->
+			<!--							<m:Button text="Paste" type="Transparent"/>-->
+			<!--							<m:Button text="Undo" type="Transparent"/>-->
+			<!--						</m:OverflowToolbar>-->
+			<!--					</m:footer>-->
+			<!--				</m:Page>-->
+			<!--			</l:SplitPane>-->
+			<!--		</l:PaneContainer>-->
+			<!--	</l:PaneContainer>-->
+			<!--</l:ResponsiveSplitter>-->
+			<Table id="idProductsTable" mode="MultiSelect" inset="false" items="{ path: '/ProductCollection', sorter: { path: 'Name' } }">
+				<headerToolbar>
+				<OverflowToolbar>
+					<content>
+						<Title text="Equipment Master Data" level="H2"/>
+						<ToolbarSpacer />
+					</content>
+				</OverflowToolbar>
+				</headerToolbar>
+				<!--<infoToolbar>-->
+				<!--	<Toolbar active="true">-->
+				<!--		<Label text="Equipment Master Data"/>-->
+				<!--	</Toolbar>-->
+				<!--</infoToolbar>-->
+				<columns>
+					<Column width="12em">
+						<Text text="Spare Part"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Spare Part Description"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+						<Text text="Requirement Qty"/>
+					</Column>
+					<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+						<Text text="Unit"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<!--<ObjectIdentifier title="3227" text="3227"/>-->
+							<!--<Text text="429003-ADAPTER"/>-->
+							<!--<Text text="23"/>-->
+							<!--<ObjectNumber number="EA" unit=""-->
+							<!--	state="{ parts: [ {path: 'WeightMeasure'}, {path: 'WeightUnit'} ], formatter: 'sap.m.sample.Table.Formatter.weightState' }"/>-->
+							<!--<ObjectNumber-->
+							<!--	number="{ parts:[{path:'Price'},{path:'CurrencyCode'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"-->
+							<!--	unit="{CurrencyCode}"/>-->
+							<Input value="3227" type="Text" showValueHelp="false" enabled="true" visible="true" width="100%" valueHelpOnly="false" maxLength="0"/>
+							<Input value="429003-ADAPTER" type="Text" showValueHelp="false" enabled="true" visible="true" width="100%" valueHelpOnly="false" maxLength="0"/>
+							<Input value="01" type="Text" showValueHelp="false" enabled="true" visible="true" width="100%" valueHelpOnly="false" maxLength="0"/>
+							<Input value="EA" type="Text" showValueHelp="false" enabled="true" visible="true" width="100%" valueHelpOnly="false" maxLength="0"/>
+							
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<!--<Table id="itemTable" width="100%" noDataText="No data" mode="MultiSelect" showSeparators="All" growing="true" growingThreshold="20"-->
+			<!--	items="{/listdata}" growingScrollToLoad="true" itemPress="Tab_press">-->
+			<!--	<infoToolbar>-->
+			<!--		<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">-->
+			<!--			<content>-->
+			<!--				<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</content>-->
+			<!--		</Toolbar>-->
+			<!--	</infoToolbar>-->
+			<!--	<headerToolbar>-->
+			<!--		<OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">-->
+			<!--			<content>-->
+			<!--				<ToolbarSpacer width=""/>-->
+			<!--			</content>-->
+			<!--		</OverflowToolbar>-->
+			<!--	</headerToolbar>-->
+			<!--	<columns>-->
+			<!--		<Column visible="false" width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline"-->
+			<!--			mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Item" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="false"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Mat Number" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Mat Desc" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Order Qty" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="UoM" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Net Price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="Total" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--		<Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">-->
+			<!--			<header>-->
+			<!--				<Text text="First Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--			</header>-->
+			<!--			<footer/>-->
+			<!--		</Column>-->
+			<!--	</columns>-->
+			<!--	<items>-->
+			<!--		<ColumnListItem type="Active">-->
+			<!--			<cells>-->
+			<!--				<ObjectIdentifier title="{ItemNo1}" text="" titleActive="false" visible="true"/>-->
+			<!--				<Text text="{MaterialNumber1}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--				<Text text="{ProductName1}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--				<Input id="inp100" width="70%" value="{Qty1}" editable="false" liveChange="Live2"/>-->
+			<!--				<Text text="{uom1}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--				<ObjectNumber number="{Finpr1}" unit="{curr1}" emphasized="true" state="None"/>-->
+			<!--				<ObjectNumber number="{netamnt1}" unit="{curr1}" emphasized="true" state="None"/>-->
+			<!--				<Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+			<!--				<layout:HorizontalLayout>-->
+			<!--					<layout:content/>-->
+			<!--				</layout:HorizontalLayout>-->
+			<!--			</cells>-->
+			<!--		</ColumnListItem>-->
+			<!--	</items>-->
+			<!--</Table>-->
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="Copy to component" type="Transparent" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>
